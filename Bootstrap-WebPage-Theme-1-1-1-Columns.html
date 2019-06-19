@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Web Page Theme 1-1-1 Columns</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/profpic.jpg">
+	<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
+	<script src="jquery-3.4.1/jquery-3.4.1.min.js"></script>
+	<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+		/* Remove the navbar's default margin-bottom and rounded borders */ 
+		.navbar {
+		  margin-bottom: 0;
+		  border-radius: 0;
+		}
+		
+		/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+		.row.content {height: 450px}
+		
+		/* Set black background color, white text and some padding */
+		footer {
+		  background-color: #074a5e;
+		  color: WHITE;
+		  padding: 15px;
+		}
+		
+		/* On small screens, set height to 'auto' for sidenav and grid */
+		@media screen and (max-width: 767px) {
+		  .sidenav {
+			height: auto;
+			padding: 15px;
+		  }
+		  .row.content {height:auto;} 
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse" style="background-color: #074a5e;">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		  </button>
+		  <a class="navbar-brand" href="#"><img src="images/profpic.jpg" width="110" height="50" /></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li class="dropdown" id="productsMenuClass">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">PRODUCT 1</a></li>
+						<li class="divider"></li>
+						<li><a href="#">PRODUCT 2</a></li>
+						<li class="divider"></li>
+						<li><a href="#">PRODUCT 3</a></li>
+						<li class="divider"></li>
+						<li><a href="#">PRODUCT 4</a></li>
+						<li class="divider"></li>
+					</ul>
+				</li>
+				<li class="dropdown" id="servicesMenuClass">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">IOT SERVICES</a></li>
+						<li class="divider"></li>
+						<li><a href="#">AI SERVICES</a></li>
+						<li class="divider"></li>
+						<li><a href="#">ML SERVICES</a></li>
+						<li class="divider"></li>
+						<li><a href="#">FINANCE SERVICES</a></li>
+						<li class="divider"></li>
+					</ul>
+				</li>
+				<li><a href="#">CUSTOMERS</a></li>
+				<li><a href="#">CONTACT</a></li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right mr-auto">
+			<li></br><input type="text" name="search" value="" placeholder="Search ...">&nbsp;<span class="glyphicon glyphicon-search" style="color:white"></span></li>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		  </ul> 
+		</div>
+	  </div>
+	</nav>
+
+	  <div class="container">
+		<h1>Welcome</h1>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		  <hr>
+		  <h3>Test</h3>
+		  <p>Lorem ipsum...</p>
+		  <hr>
+		  <h3>Test</h3>
+		  <p>Lorem ipsum...</p>
+		  <hr>
+		  <h3>Test</h3>
+		  <p>Lorem ipsum...</p>
+	  </div>
+
+	 
+	<footer class="container-fluid text-center">
+		<ul class="list-unstyled list-inline">		
+			<li class="list-inline-item"><a href="https://in.linkedin.com/in/rahamathullah-s-18a12816"><img src="images/linkedin.png" width="32" height="30" /></a></li>
+			<li class="list-inline-item"><a href="https://twitter.com/Rahamat87523498"><img src="images/twitter.png" width="32" height="30" /></a></li>
+			<li class="list-inline-item"><a href="https://github.com/rahamath18"><img src="images/github.png" width="32" height="30" /></a></li>
+			<li class="list-inline-item"><a href="https://play.google.com/store/apps/developer?id=Rahamathullah+S"><img src="images/google-play.png" width="32" height="30" /></a></li>
+		</ul>
+		<p>Copyright © 2003-2019 rahamaths.appspot.com, all rights reserved.</p>    
+	</footer>
+</body>
+</html>
